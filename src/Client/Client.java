@@ -16,7 +16,7 @@ public class Client {
 
         try(Socket socket = new Socket("localhost", port)){
 
-            System.out.println("Conexion establecida con el servidor");
+            System.out.println("Connection established with the server");
 
 
             ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
