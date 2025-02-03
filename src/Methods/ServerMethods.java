@@ -10,22 +10,22 @@ public class ServerMethods {
     public int MakeOperation(String [] operation){
 
         String operador = operation[1];
-        int resultado = 0;
+        int result = 0;
         switch (operador){
             case "+":
-                resultado = addition(operation);
+                result = addition(operation);
                 break;
             case "-":
-                resultado = subtraction(operation);
+                result = subtraction(operation);
                 break;
             case "*":
-                resultado = multiplication(operation);
+                result = multiplication(operation);
                 break;
             case "/":
-                resultado = division(operation);
+                result = division(operation);
                 break;
         }
-        return resultado;
+        return result;
     }
     public int addition(String[] operation) {
         String number1 = operation[0];
