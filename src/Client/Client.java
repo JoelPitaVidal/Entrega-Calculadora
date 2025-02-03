@@ -12,7 +12,7 @@ public class Client {
 
         int puerto = 6666;
         String [] datosOperar = new String [3];
-        ClientMethods metodosCliente = new ClientMethods();
+        ClientMethods methodsOfClient = new ClientMethods();
 
         try(Socket socket = new Socket("localhost", puerto)){
 
@@ -24,7 +24,7 @@ public class Client {
 
             output.writeObject(datosOperar);
 
-            String [] datosRecibidos = (String[]) input.readObject();
+            String [] dataReceived = (String[]) input.readObject();
 
 
         }catch(IOException e){
